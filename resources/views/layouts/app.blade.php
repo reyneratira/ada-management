@@ -17,7 +17,7 @@
     @vite('resources/js/app.js')
 </head>
 
-<body class="bg-gray-100 font-sans flex h-screen">
+<body class="bg-gray-100 font-sans flex h-screen" x-data x-init="$el.classList.add('page-transition'); setTimeout(() => $el.classList.add('loaded'), 50)">
 
     <!-- Sidebar -->
     @include('components.sidebar')
